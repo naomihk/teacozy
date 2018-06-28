@@ -42,15 +42,14 @@ header nav {
 }
 
 nav {
+  text-align: right;
+  flex-grow: 1;
   text-decoration: underline;
-
 }
 
 nav span {
   display: inline-block;
 }
-
-
 
 /* Universal Styles - News Stories */
 
@@ -104,6 +103,8 @@ nav span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  z-index: 2;
 }
 
 .location {
