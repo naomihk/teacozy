@@ -4,18 +4,21 @@ body {
   color: seashell;
   opacity: 0.9;
   text-align: center;
+  background-color: black;
 }
 
 a {
   color: seashell;
 }
 
-h2 {
-
+h2, h3, h4 {
+margin: 0;
+padding: 10px;
 }
 
 div {
   border: 1px solid pink;
+  display: block;
 }
 
 /* Header */
@@ -43,7 +46,6 @@ header nav {
 nav {
   text-align: right;
   flex-grow: 1;
-  text-decoration: underline;
 }
 
 nav span {
@@ -53,20 +55,17 @@ nav span {
 /* Universal Styles - News Stories */
 
 
-.content {
+.main {
   display: flex;
   flex-direction: column;
 }
 
-div {
-  display: block;
-}
 
 /* Main Section */
 
-#main {
+#mission {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   height: 700px;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   padding-top: 70px;
 }
 
@@ -94,17 +93,23 @@ div {
   padding: 10px;
 }
 
+#store {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+}
+
 
 /* Address Section */
 
 #locations {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   height: 500px;
   padding-top: 70px;
 }
 
 .location {
-  width: 300px;
   padding: 20px;
   background-color: black;
   display: flex;
@@ -112,12 +117,16 @@ div {
   justify-content: center;
   flex-basis: 280px;
   opacity: 1.0;
+  margin: 5px 20px;
 }
-
+/* Contact */
+#contact {
+  height: 200px;
+}
 
 
 /* Footer */
 footer  {
-  height: 200px;
-  background-color: black;
+  text-align: left;
+  padding-left: 20px;
 }
