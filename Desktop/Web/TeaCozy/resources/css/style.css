@@ -17,8 +17,12 @@ padding: 10px;
 }
 
 div {
-  border: 1px solid pink;
   display: block;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -52,14 +56,6 @@ nav span {
   display: inline-block;
 }
 
-/* Universal Styles - News Stories */
-
-
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
 
 /* Main Section */
 
@@ -67,6 +63,9 @@ nav span {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   height: 700px;
   padding-top: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .flex-container {
@@ -75,7 +74,12 @@ nav span {
   flex-wrap: wrap;
 }
 
-
+.content {
+  background-color: black;
+  width: 100%;
+  height: 104px;
+  align-self: center;
+}
 
 /* Tea Section */
 
@@ -83,7 +87,6 @@ nav span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .tea img {
@@ -100,17 +103,19 @@ nav span {
   padding-top: 70px;
 }
 
-
 /* Address Section */
 
 #locations {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   height: 500px;
   padding-top: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .location {
-  padding: 20px;
+  padding: 10px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -119,7 +124,9 @@ nav span {
   opacity: 1.0;
   margin: 5px 20px;
 }
+
 /* Contact */
+
 #contact {
   height: 200px;
 }
